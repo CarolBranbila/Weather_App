@@ -5,11 +5,11 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [
-        CurrencyEntity::class,
-        QuotesEntity::class
+        CurrentEntity::class,
+        //QuotesEntity::class
     ],
     version = 1)
 abstract class AppDataBase : RoomDatabase() {
-    abstract fun currencyDao(): CurrencyDao
+    abstract fun currentDao(): CurrentDao
     abstract fun quotesDao(): QuotesDao
 }
