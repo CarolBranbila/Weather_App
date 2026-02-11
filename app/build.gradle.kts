@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.okhttp)
     implementation(libs.hilt.android)
+    implementation(libs.room.ktx)
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.android.navigation)
 
