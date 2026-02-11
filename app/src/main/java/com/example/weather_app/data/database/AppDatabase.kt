@@ -11,5 +11,5 @@ import androidx.room.RoomDatabase
     version = 1)
 abstract class AppDataBase : RoomDatabase() {
     abstract fun currentDao(): CurrentDao
-    abstract fun quotesDao(): QuotesDao
+    abstract fun forecastDao(): ForecastDao
 }

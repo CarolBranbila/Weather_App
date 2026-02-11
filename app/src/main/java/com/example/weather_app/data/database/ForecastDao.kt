@@ -10,10 +10,10 @@ import androidx.room.Query
 
 interface ForecastDao {
     @Insert(onConflict = REPLACE)
-    suspend fun insertAll(currency: List<ForecastDao>)
+    suspend fun insertAll(forecast: List<ForecastEntity>)
 
     @Delete
-    suspend fun delete(currency: ForecastEntity)
+    suspend fun delete(forecast: ForecastEntity)
 
     @Query("SELECT * FROM ForecastEntity")
     suspend fun getAll(): List<ForecastEntity>
