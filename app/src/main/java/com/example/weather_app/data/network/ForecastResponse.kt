@@ -45,22 +45,6 @@ data class CurrentForecast (
     val isDay: Int,
     @SerialName("condition")
     val condition: Condition,
-    @SerialName("wind_mph")
-    val windMph: Double,
-    @SerialName("wind_kph")
-    val windKph: Double,
-    @SerialName("wind_degree")
-    val windDegree: Int,
-    @SerialName("wind_dir")
-    val windDir: String,
-    @SerialName("humidity")
-    val humidity: Int,
-    @SerialName("feelslike_c")
-    val feelslikeC: Double,
-    @SerialName("dni")
-    val dni: Double,
-    @SerialName("gti")
-    val gti: Double
 )
 
 @Serializable
@@ -101,26 +85,6 @@ data class Day(
     val mintempC: Double,
     @SerialName("mintemp_f")
     val mintempF: Double,
-    @SerialName("avgtemp_c")
-    val avgtempC: Double,
-    @SerialName("avgtemp_f")
-    val avgtempF: Double,
-    @SerialName("maxwind_mph")
-    val maxwindMph: Double,
-    @SerialName("maxwind_kph")
-    val maxwindKph: Double,
-    @SerialName("totalprecip_mm")
-    val totalprecipMm: Double,
-    @SerialName("totalprecip_in")
-    val totalprecipIn: Double,
-    @SerialName("daily_will_it_rain")
-    val dailyWillItRain: Int,
-    @SerialName("daily_chance_of_rain")
-    val dailyChanceOfRain: Int,
-    @SerialName("daily_will_it_snow")
-    val dailyWillItSnow: Int,
-    @SerialName("daily_chance_of_snow")
-    val dailyChanceOfSnow: Int,
     @SerialName("condition")
     val condition: Condition,
 )
@@ -139,42 +103,4 @@ data class Hour(
     val isDay: Int,
     @SerialName("condition")
     val condition: Condition,
-    @SerialName("wind_mph")
-    val windMph: Double,
-    @SerialName("wind_kph")
-    val windKph: Double,
-    @SerialName("wind_degree")
-    val windDegree: Int,
-    @SerialName("wind_dir")
-    val windDir: String,
-    @SerialName("pressure_mb")
-    val pressureMb: Double,
-    @SerialName("pressure_in")
-    val pressureIn: Double,
-    @SerialName("precip_mm")
-    val precipMm: Double,
-    @SerialName("precip_in")
-    val precipIn: Double,
-    @SerialName("snow_cm")
-    val snowCm: Double,
-    @SerialName("humidity")
-    val humidity: Int,
-    @SerialName("cloud")
-    val cloud: Int,
-    @SerialName("feelslike_c")
-    val feelslikeC: Double,
-    @SerialName("windchill_c")
-    val windchillC: Double,
-    @SerialName("heatindex_c")
-    val heatindexC: Double,
-    @SerialName("dewpoint_c")
-    val dewpointC: Double,
-    @SerialName("will_it_rain")
-    val willItRain: Int,
-    @SerialName("chance_of_rain")
-    val chanceOfRain: Int,
-    @SerialName("dni")
-    val dni: Double,
-    @SerialName("gti")
-    val gti: Double
 )

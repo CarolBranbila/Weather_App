@@ -11,7 +11,7 @@ data class WeatherResponse(
 )
 
 @Serializable
-data class Location(
+data class LocationCurrent(
     @SerialName("name")
     val name: String,
     @SerialName("region")
@@ -42,28 +42,6 @@ data class Current(
     val isDay: Int,
     @SerialName("condition")
     val condition: Condition,
-    @SerialName("wind_mph")
-    val windMph: Double,
-    @SerialName("wind_kph")
-    val windKph: Double,
-    @SerialName("wind_degree")
-    val windDegree: Int,
-    @SerialName("wind_dir")
-    val windDir: String,
-    @SerialName("pressure_mb")
-    val pressureMb: Double,
-    @SerialName("pressure_in")
-    val pressureIn: Double,
-    @SerialName("humidity")
-    val humidity: Int,
-    @SerialName("cloud")
-    val cloud: Int,
-    @SerialName("feelslike_c")
-    val feelslikeC: Double,
-    @SerialName("feelslike_f")
-    val feelslikeF: Double,
-    @SerialName("windchill_c")
-    val windchillC: Double,
 )
 
 @Serializable
