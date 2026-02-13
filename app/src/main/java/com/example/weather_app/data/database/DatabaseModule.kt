@@ -25,4 +25,9 @@ object DatabaseModule {
     fun provideForecastDao(
         appDataBase: AppDataBase
     ): ForecastDao = appDataBase.forecastDao()
+
+    @Provides
+    fun provideSearchDao(
+        appDataBase: AppDataBase
+    ): SearchDao = appDataBase.searchDao()
 }
