@@ -8,7 +8,7 @@ data class SearchEntity(
     @PrimaryKey(autoGenerate = true)
     val id:Long = 0,
 
-    val name: String,
+    val localName: String,
     val region: String,
     val country: String,
     val lat: Double,

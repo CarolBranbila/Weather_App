@@ -4,7 +4,6 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-
 data class ForecastEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
@@ -17,9 +16,10 @@ data class ForecastEntity(
     val maxtempC: Double,
     val mintempC: Double,
     val time: String,
-    val tempC: Double,
     val isDay: Int,
     val localtime: String,
+
+    val tempC: Double,
     val conditionText: String,
     val conditionIcon: String,
     val conditionCode: Int,

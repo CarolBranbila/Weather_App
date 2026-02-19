@@ -7,7 +7,6 @@ import androidx.room.OnConflictStrategy.Companion.REPLACE
 import androidx.room.Query
 
 @Dao
-
 interface ForecastDao {
     @Insert(onConflict = REPLACE)
     suspend fun insertAll(forecast: List<ForecastEntity>)

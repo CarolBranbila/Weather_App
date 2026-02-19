@@ -12,6 +12,16 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
+        val item = mutableListOf<Int>()
+        repeat(1000) {
+            item.add(it)
+        }
+        val array2 = arrayOf<Int>()
+
+        array2[2] = 3
+
+        mutableListOf<Int>()
+        //array
         assertEquals(4, 2 + 2)
     }
 }

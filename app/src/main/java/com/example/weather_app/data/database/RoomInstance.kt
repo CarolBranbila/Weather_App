@@ -10,5 +10,5 @@ fun createRoomDatabaseInstance(
     Room.databaseBuilder(
         applicationContext,
         AppDataBase::class.java,
-        "btg.db",
+        "WeatherApp.db",
     ).build()

@@ -18,5 +18,5 @@ data class Location(
     @SerialName("lon")
     val lon: Double,
     @SerialName("url")
-    val url: String
+    val url: String,
 )

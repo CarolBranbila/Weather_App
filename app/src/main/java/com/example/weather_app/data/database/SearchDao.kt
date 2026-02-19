@@ -14,4 +14,5 @@ interface SearchDao {
 
     @Query("SELECT * FROM SearchEntity")
     suspend fun getAll(): List<SearchEntity>
+    //fndByName
 }

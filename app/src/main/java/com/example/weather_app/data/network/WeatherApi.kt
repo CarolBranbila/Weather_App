@@ -15,7 +15,7 @@ interface WeatherApi {
     suspend fun getForecastInformation(
         @Query("key") apiKey: String,
         @Query("q") city: String,
-        @Query("days") days: Int
+        @Query("days") days: Int,
     ) : WeatherForecastResponse
 
 }
