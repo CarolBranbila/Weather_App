@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.hilt.android)
     implementation(libs.room.ktx)
+    implementation(libs.coil.network.okhttp)
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.android.navigation)
 
