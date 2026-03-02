@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weather_app.ui.theme.PreviewAppTheme
 
+
 @Composable
 fun MainTemperatureDisplay(
     modifier: Modifier,
@@ -32,6 +33,7 @@ fun MainTemperatureDisplay(
             .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
+        AsyncImage()
         Text(
             text = tempC,
             fontSize = 120.sp,
