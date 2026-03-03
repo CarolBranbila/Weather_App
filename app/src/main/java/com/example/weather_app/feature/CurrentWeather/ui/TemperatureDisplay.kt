@@ -55,7 +55,7 @@ fun MainTemperatureDisplay(
             contentScale = ContentScale.Crop    ,
         )
         Text(
-            text = tempC,
+            text ="$tempC°",
             fontSize = 120.sp,
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.Bold,
@@ -110,7 +110,7 @@ private fun MainTemperatureDisplayPreview() {
                 maxTempC = "12",
                 minTemC = "11",
                 tempC = "10",
-                conditionIcon = "http://api.weatherapi.com/v1/cdn.weatherapi.com/weather/64x64/day/356.png",
+                conditionIcon = "http://cdn.weatherapi.com/weather/64x64/day/356.png",
             )
         }
     }
