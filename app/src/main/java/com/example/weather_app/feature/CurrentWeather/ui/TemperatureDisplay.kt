@@ -44,6 +44,7 @@ fun MainTemperatureDisplay(
         modifier = modifier
             .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceAround,
     ) {
         AsyncImage(
             modifier = Modifier
@@ -67,7 +68,7 @@ fun MainTemperatureDisplay(
 
         Text(
             text = conditionText,
-            fontSize = 20.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Medium,
             color = MaterialTheme.colorScheme.secondary,
         )
@@ -79,13 +80,13 @@ fun MainTemperatureDisplay(
         ) {
             Text(
                 text = "L: $minTemC°",
-                fontSize = 16.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colorScheme.secondary,
             )
             Text(
                 text = "H: $maxTempC°",
-                fontSize = 16.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colorScheme.secondary,
             )

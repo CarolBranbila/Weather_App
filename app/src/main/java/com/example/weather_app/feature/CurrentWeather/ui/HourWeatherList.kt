@@ -35,7 +35,6 @@ import com.example.weather_app.ui.theme.PreviewAppTheme
 @Composable
 fun TimePerHourList(
     modifier: Modifier = Modifier,
-    hourList: List<TimePerHour> = emptyList(),
     viewState: CurrentWeatherViewState,
 ){
     LazyRow(
@@ -55,11 +54,6 @@ fun TimePerHourList(
         }
     }
 }
-
-
-
-
-
 
 
 
